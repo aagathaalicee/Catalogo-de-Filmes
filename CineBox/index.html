@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineBox - Catálogo de Filmes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 CineBox</h1>
+        <p>Encontre seu próximo filme favorito!</p>
+    </header>
+
+    <main>
+
+        <input 
+            type="text" 
+            id="pesquisa" 
+            placeholder="Pesquisar filme..."
+        >
+
+        <div class="filtros">
+            <button onclick="filtrarGenero('Todos')">Todos</button>
+            <button onclick="filtrarGenero('Ação')">Ação</button>
+            <button onclick="filtrarGenero('Comédia')">Comédia</button>
+            <button onclick="filtrarGenero('Terror')">Terror</button>
+            <button onclick="filtrarGenero('Romance')">Romance</button>
+        </div>
+
+        <div id="filmes"></div>
+
+    </main>
+
+   <footer>
+    <h3>🎬 CineBox</h3>
+    <p>Seu catálogo de filmes favorito.</p>
+    <p class="copyright">Projeto desenvolvido com HTML, CSS e JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
